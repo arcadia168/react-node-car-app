@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CarPanel from './CarPanel/CarPanel.jsx';
-import SwitchVehicleButton from './SwitchVehicleButton/SwitchVehicleButton.jsx';
+import AddVehicleButton from './AddVehicleButton/AddVehicleButton.jsx';
 import axios from 'axios';
 
 class App extends Component {
@@ -10,6 +10,9 @@ class App extends Component {
 
     //explicitly bind hoisted functions to this on lexical scope.
     this.switchCar = this.switchCar.bind(this);
+    this.carHasBeenShown = this.carHasBeenShown.bind(this);
+
+    this.shownCars = [];
 
     const defaultCar = {
       discount: 10,
@@ -19,12 +22,28 @@ class App extends Component {
       provider: 'hertz'
     };
 
+    this.shownCars.push(defaultCar);
+
     this.state = {
-      carToShow: defaultCar
+      carsToShow: this.shownCars
     };
   }
 
+  carHasBeenShown(car) {
+    for (let i = 0; i < this.shownCars.length; i++) {
+      const currentCar = this.shownCars[i];
+
+      if (currentCar.make_model == car.make_model) {
+        return true;
+      }
+    }
+  }
+
   switchCar() {
+
+    this.setState({
+      hideCard: true
+    });
 
     //Get car info
     axios.get('/api/cars')
@@ -47,29 +66,30 @@ class App extends Component {
           carsFromApi = response.data.results;
         }
 
-        //Choose a car at random to display between 0 and 4
-        let randomCarIndexToShow = Math.floor(Math.random() * 5);
-
         //Ensure we are not showing the same car as previous click
         let nextCarToShow;
-        let sameCarAsLastTime = true;
+        let carHasBeenShown = true;
+        let attempt = 0;
 
-        //Choose a random car, check that we won't be showing the same car twice.
-        do {
-          nextCarToShow = carsFromApi[randomCarIndexToShow];
+        //Check over the list of new 5 cars recieved, against existing cars. Show 1 new car.
+        for (let i = 0; i < carsFromApi.length; i++) {
+          nextCarToShow = carsFromApi[i];
 
-          //If car make and model are same, choose another at random and re-check
-          if (this.state.carToShow.make_model == nextCarToShow.make_model) {
-              randomCarIndexToShow = Math.floor(Math.random() * (5 - 1 + 1)) + 1;
-          } else {
-            sameCarAsLastTime = false;
+          //If car make and model are same, check the next, otherwise shown this car
+          if (!this.carHasBeenShown(nextCarToShow)) {
+            //Now add this car to the list of shown cars
+            this.shownCars.push(nextCarToShow);
+
+            //Update the UI with the new, randomly chosen car
+            this.setState({
+              carsToShow: this.shownCars
+            })
+
+            //Only show 1 new car
+            return;
           }
-        } while (sameCarAsLastTime);
-
-        //Update the UI with the new, randomly chosen car
-        this.setState({
-          carToShow: nextCarToShow
-        })
+          //No new cars on this call to the API
+        }
       })
       .catch(function (error) {
         console.log(error);
@@ -77,11 +97,13 @@ class App extends Component {
   }
 
   render() {
-    const carToShow = this.state.carToShow;
+    const carsToShow = this.state.carsToShow;
 
     return <div>
-      <SwitchVehicleButton action={this.switchCar}>Add Vehicle</SwitchVehicleButton>
-      <CarPanel car={carToShow} />
+      <AddVehicleButton action={this.switchCar} hide={this.state.hideCard}>Add Vehicle</AddVehicleButton>
+      {carsToShow.map((carToShow, key) => (
+        <CarPanel key={key} car={carToShow} />
+      ))}
     </div>;
   }
 }

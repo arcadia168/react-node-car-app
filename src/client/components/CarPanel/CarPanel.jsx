@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './carPanel.scss';
+
 class CarPanel extends Component {
     render() {
 
@@ -11,8 +12,18 @@ class CarPanel extends Component {
 
         //Generate the logo img src url using car provider
         const carProviderLogo = `/dist/images/${this.props.car.provider}-logo.jpg`;
-        
-        return <div className="car-panel">
+
+
+        const panelStyles = ["car-panel"];
+        //Check animation state on re-render
+        const hide = null;
+        if (this.props.hide == true) {
+            panelStyles.push('hide');
+        } else {
+            panelStyles.push('show');
+        }
+
+        return <div className={panelStyles.join(' ')}>
             {discount}
             <img className="make-logo" src={carProviderLogo}></img>
             <hr className="panel-divider"></hr>

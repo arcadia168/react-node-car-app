@@ -4,11 +4,10 @@
     height: 20rem;
     display: flex;
     flex-direction: column;
-
     .discount-panel {
         background: #619037;
         color: white;
-        width: 33%;
+        width: 5rem;
         display: flex;
         align-self: flex-end;
         position: absolute;
@@ -17,13 +16,11 @@
         padding: .75rem;
         align-items: center;
     }
-
     .make-logo {
         height: 3rem;
         align-self: center;
         margin-top: 33%;
     }
-    
     .panel-divider {
         width: 60%;
         align-self: center;
@@ -34,26 +31,51 @@
         margin: 2em 0;
         padding: 0;
     }
-
     .car-details {
         align-self: center;
         color: black;
-
         .make-model {
             font-size: x-large;
             font-weight: bold;
         }
-
         .vehicle-type {
             color: grey;
             font-size: medium;
         }
     }
-
     .price {
         font-size: xx-large;
         color: #519FEE;
         margin: 1rem;
         font-weight: bold;
+    } // .show {
+    //     opacity: 1;
+    //     visibility: visible;
+    //     -webkit-transition: 0.5s;
+    //     -moz-transition: 0.5s;
+    //     -o-transition: 0.5s;
+    //     transition: 0.5s;
+    // }
+    // .hide {
+    //     -webkit-transition: 0.5s;
+    //     -moz-transition: 0.5s;
+    //     -o-transition: 0.5s;
+    //     transition: 0.5s;
+    //     opacity: 0;
+    //     visibility: hidden;
+    // }
+    .car-panel-animate-enter {
+        opacity: 0.01;
+    }
+    .car-panel-animate-enter.car-panel-animate-enter-active {
+        opacity: 1;
+        transition: opacity 500ms ease-in;
+    }
+    .car-panel-animate-leave {
+        opacity: 1;
+    }
+    .car-panel-animate-leave.car-panel-animate-leave-active {
+        opacity: 0.01;
+        transition: opacity 300ms ease-in;
     }
 }
