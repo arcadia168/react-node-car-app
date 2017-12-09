@@ -11,8 +11,8 @@
         width: 33%;
         display: flex;
         align-self: flex-end;
-        position: relative;
-        top: 0.75rem;
+        position: absolute;
+        margin-top: 1rem;
         justify-content: center;
         padding: .75rem;
         align-items: center;
@@ -21,7 +21,7 @@
     .make-logo {
         height: 3rem;
         align-self: center;
-        margin-top: 15%;
+        margin-top: 33%;
     }
     
     .panel-divider {
