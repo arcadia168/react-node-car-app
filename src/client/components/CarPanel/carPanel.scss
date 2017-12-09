@@ -1,0 +1,59 @@
+.car-panel {
+    background: white !important;
+    width: 15rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+
+    .discount-panel {
+        background: #619037;
+        color: white;
+        width: 33%;
+        display: flex;
+        align-self: flex-end;
+        position: relative;
+        top: 0.75rem;
+        justify-content: center;
+        padding: .75rem;
+        align-items: center;
+    }
+
+    .make-logo {
+        height: 3rem;
+        align-self: center;
+        margin-top: 15%;
+    }
+    
+    .panel-divider {
+        width: 60%;
+        align-self: center;
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 2em 0;
+        padding: 0;
+    }
+
+    .car-details {
+        align-self: center;
+        color: black;
+
+        .make-model {
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        .vehicle-type {
+            color: grey;
+            font-size: medium;
+        }
+    }
+
+    .price {
+        font-size: xx-large;
+        color: #519FEE;
+        margin: 1rem;
+        font-weight: bold;
+    }
+}
