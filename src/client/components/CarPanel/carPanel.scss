@@ -2,7 +2,8 @@
     background: white !important;
     width: 15rem;
     height: 20rem;
-    display: flex;
+    display: inline-flex;
+    margin: 1rem;
     flex-direction: column;
     .discount-panel {
         background: #619037;
@@ -48,22 +49,7 @@
         color: #519FEE;
         margin: 1rem;
         font-weight: bold;
-    } // .show {
-    //     opacity: 1;
-    //     visibility: visible;
-    //     -webkit-transition: 0.5s;
-    //     -moz-transition: 0.5s;
-    //     -o-transition: 0.5s;
-    //     transition: 0.5s;
-    // }
-    // .hide {
-    //     -webkit-transition: 0.5s;
-    //     -moz-transition: 0.5s;
-    //     -o-transition: 0.5s;
-    //     transition: 0.5s;
-    //     opacity: 0;
-    //     visibility: hidden;
-    // }
+    } 
     .car-panel-animate-enter {
         opacity: 0.01;
     }
@@ -77,5 +63,53 @@
     .car-panel-animate-leave.car-panel-animate-leave-active {
         opacity: 0.01;
         transition: opacity 300ms ease-in;
+    }
+}
+
+/* Smartphones (phablets e.g. iPhone 6+) (portrait) ----------- */
+@media only screen and (max-width : 414px) {
+    /* Styles */
+    .car-panel {
+        margin: initial;
+        height: 5rem;
+        min-width: 300px;
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid silver;
+
+        .discount-panel {
+            display: none;
+        }
+        
+        .make-logo {
+           margin-top: initial; 
+           width: 25%;
+        }
+
+        .panel-divider {
+            display: none;
+        }
+        .car-details {
+            width: 35%;
+            text-align: left;
+            
+            .make-model {
+                font-size: medium;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .vehicle-type {
+                font-size: small;
+            }
+        }
+        .price {
+            font-size: x-large;
+            margin: initial;
+        }
     }
 }

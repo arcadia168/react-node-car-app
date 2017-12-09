@@ -29,7 +29,7 @@ class CarPanel extends Component {
             <hr className="panel-divider"></hr>
             <div className="car-details">
                 <div className="make-model">{this.props.car.make_model}</div>
-                <div className="vehicle-type">{this.props.car.vehicleType}</div>
+                <div className="vehicle-type">{this.props.car.type}</div>
             </div>
             <div className="price">£{this.props.car.price}</div>
         </div>;

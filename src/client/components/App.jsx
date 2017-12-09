@@ -16,7 +16,7 @@ class App extends Component {
 
     const defaultCar = {
       discount: 10,
-      vehicleType: 'SUV',
+      type: 'SUV',
       price: '40',
       make_model: 'Honda CRV',
       provider: 'hertz'
@@ -59,7 +59,7 @@ class App extends Component {
             const newCarPrice = car.price - discountToSubtract;
             const roundedNewCarPrice = Math.round(newCarPrice * 100) / 100; //Round the new car price to 2 d.p
             car.discount = discountPercentage;
-            car.price = roundedNewCarPrice;
+            car.price = roundedNewCarPrice.toFixed(0);
             return car;
           })
         } else {
