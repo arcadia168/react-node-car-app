@@ -1,8 +1,16 @@
-# Frontend developers interview exercise
+#To build and run the solution:
 
 ___
 
-Here at Rentalcars.com we embrace a collaborative working culture and we like to communicate and share our work as much as possible. Therefore, we encourage you to communicate your thoughts and ideas as you go along. If you are not sure about anything or need some guidance feel free to ask questions. We are here to help you.
+- Install the necessary dependencies: 'npm install'
+- Build the React frontend using Webpack: 'npm run webpack'
+- Start the API and Express server to serve the react files: 'npm start'
+
+# Frontend developer exercise
+
+___
+
+We encourage you to communicate your thoughts and ideas as you go along. If you are not sure about anything or need some guidance feel free to ask questions. We are here to help you.
 
 Above all else, this exercise should not be about trying to finish every task or how fast you can do it, but mainly about the way you work and how you do it. Therefore, feel free to use any online resources you want such as any online APIs, Google, StackOverflow, etc.
 
