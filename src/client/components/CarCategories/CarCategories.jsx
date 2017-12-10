@@ -9,7 +9,6 @@ class CarCategories extends Component {
 
         //extract cars into 'type' categories using hash map with array of cars in category
         let carCategories = {};
-        debugger;
         for (let i = 0; i < cars.length; i++) {
             const currentCar = cars[i];
             const currentCarType = currentCar.type;

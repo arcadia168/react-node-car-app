@@ -48,6 +48,7 @@ class App extends Component {
     //Get car info
     axios.get('/api/cars')
       .then((response) => {
+        console.log("RESPONSE IN COMPONENT: " + JSON.stringify(response));
         let carsFromApi = [];
 
         //Apply discounts to car prices, if a discount is provided.

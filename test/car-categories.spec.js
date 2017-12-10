@@ -34,7 +34,6 @@ test('#CarCategoriesComponent', () => {
     const carCategories = renderer.create(
         <CarCategories cars={mockCars} />
     );
-    console.log(carCategories);
     let carCategoriesTree = carCategories.toJSON();
     expect(carCategoriesTree).toMatchSnapshot();
 });

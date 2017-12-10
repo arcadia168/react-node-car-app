@@ -4,7 +4,7 @@ import App from '../src/client/components/App.jsx';
 import CarCategory from '../src/client/components/CarCategories/CarCategory/CarCategory.jsx';
 import renderer from 'react-test-renderer';
 
-test('#CarCategoriesComponent', () => {
+test('#CarCategoryComponent', () => {
     const mockCars = [{
         "make_model": "Ford Ka",
         "type": "Compact",
@@ -21,9 +21,10 @@ test('#CarCategoriesComponent', () => {
         "provider": "enterprise",
         "price": 39.59
     },];
-    const carCategories = renderer.create(
+    const carCategory = renderer.create(
         <CarCategory categoryName="Compact" cars={mockCars} />
     );
-    let carCategoriesTree = carCategories.toJSON();
-    expect(carCategoriesTree).toMatchSnapshot();
+    let carCategoryTree = carCategory.toJSON();
+    expect(carCategoryTree.children[0].children[0]).toEqual("Compact");
+    expect(carCategoryTree).toMatchSnapshot();
 });

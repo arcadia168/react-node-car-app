@@ -4,7 +4,6 @@ import CarPanel from '../../CarPanel/CarPanel.jsx';
 
 class CarCategory extends Component {
     render() {
-        debugger;
         const carsToShow = this.props.cars;
 
         return <div className="car-category">
