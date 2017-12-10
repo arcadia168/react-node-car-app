@@ -13,7 +13,6 @@ class CarPanel extends Component {
         //Generate the logo img src url using car provider
         const carProviderLogo = `/dist/images/${this.props.car.provider}-logo.jpg`;
 
-
         const panelStyles = ["car-panel"];
         //Check animation state on re-render
         const hide = null;
@@ -25,7 +24,7 @@ class CarPanel extends Component {
 
         return <div className={panelStyles.join(' ')}>
             {discount}
-            <img className="make-logo" src={carProviderLogo}></img>
+            <img className="rental-provider" src={carProviderLogo}></img>
             <hr className="panel-divider"></hr>
             <div className="car-details">
                 <div className="make-model">{this.props.car.make_model}</div>

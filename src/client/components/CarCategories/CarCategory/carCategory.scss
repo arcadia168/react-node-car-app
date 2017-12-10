@@ -10,4 +10,21 @@
         padding-left: 10%;
         display: flex;
     }
+    .category-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Smartphones (phablets e.g. iPhone 6+) (portrait) ----------- */
+
+@media only screen and (max-width: 414px) {
+    /* Styles */
+    .car-category {
+        .category-container {
+            flex-direction: column;
+        }
+    }
 }
