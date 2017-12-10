@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CarPanel from './CarPanel/CarPanel.jsx';
+import CarCategories from './CarCategories/CarCategories.jsx';
 import AddVehicleButton from './AddVehicleButton/AddVehicleButton.jsx';
 import axios from 'axios';
 
@@ -101,9 +101,7 @@ class App extends Component {
 
     return <div>
       <AddVehicleButton action={this.switchCar} hide={this.state.hideCard}>Add Vehicle</AddVehicleButton>
-      {carsToShow.map((carToShow, key) => (
-        <CarPanel key={key} car={carToShow} />
-      ))}
+      <CarCategories cars={carsToShow} />
     </div>;
   }
 }
