@@ -70,7 +70,7 @@ app.use('/resources/jquery', express.static(__dirname + '/node_modules/jquery/di
 app.use('/resources/css', express.static(__dirname + '/dist/css'));
 app.use('/resources/js', express.static(__dirname + '/dist/js'));
 app.use('/resources/images', express.static(__dirname + '/dist/images'));
-app.use('/resources/bundle.js', express.static(__dirname + '/dist/bundle.js'));
+app.use('/dist/bundle.js', express.static(__dirname + '/dist/bundle.js'));
 
 app.get('/api/cars', function (req, res) {
   var responseJson = {};
