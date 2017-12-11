@@ -1,4 +1,4 @@
-#To build and run the solution:
+# To build and run the solution:
 
 ___
 
@@ -6,7 +6,13 @@ ___
 - Build the React frontend using Webpack: 'npm run webpack'
 - Start the API and Express server to serve the react files: 'npm start'
 
-# Frontend developer exercise
+# Live solution
+
+___
+
+See the solution running live hosted on Azure (here)[http://***REMOVED***-***REMOVED***-react-node-car-rentals.azurewebsites.net/]
+
+# Frontend developer code kata/exercise
 
 ___
 

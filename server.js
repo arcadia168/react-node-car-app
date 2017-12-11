@@ -94,7 +94,6 @@ var vehicles = {
 }
 
 app.use(express.static(__dirname));
-//app.use('/dist/bundle.js', express.static(__dirname + './dist/bundle.js'));
 
 app.route('/api/cars')
   .get(function (req, res) {
@@ -104,7 +103,7 @@ app.route('/api/cars')
     res.send(responseJson);
   });
 
-  //configure port variable to run on both azure and locally
+//configure port variable to run on both azure and locally
 var port = process.env.PORT || 3000;
 
 app.listen(port, function () {
