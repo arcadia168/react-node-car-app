@@ -23157,7 +23157,6 @@ var App = function (_Component) {
 
       //Get car info
       _axios2.default.get('/api/cars').then(function (response) {
-        console.log("RESPONSE IN COMPONENT: " + JSON.stringify(response));
         var carsFromApi = [];
 
         //Apply discounts to car prices, if a discount is provided.
@@ -23271,11 +23270,13 @@ var CarCategories = function (_Component) {
 
             var cars = this.props.cars;
 
-            //extract cars into 'type' categories using hash map with array of cars in category
+            //extract cars into 'type' categories using hash map with array of cars in each category
             var carCategories = {};
             for (var i = 0; i < cars.length; i++) {
+
                 var currentCar = cars[i];
                 var currentCarType = currentCar.type;
+
                 //If this type of car doesn't exist in the hash map, add it
                 if (!(currentCarType in carCategories)) {
                     carCategories[currentCarType] = [currentCar];
