@@ -7,11 +7,13 @@ class CarCategories extends Component {
 
         const cars = this.props.cars;
 
-        //extract cars into 'type' categories using hash map with array of cars in category
+        //extract cars into 'type' categories using hash map with array of cars in each category
         let carCategories = {};
         for (let i = 0; i < cars.length; i++) {
+
             const currentCar = cars[i];
             const currentCarType = currentCar.type;
+
             //If this type of car doesn't exist in the hash map, add it
             if (!(currentCarType in carCategories)) {
                 carCategories[currentCarType] = [currentCar]
