@@ -1,5 +1,5 @@
 {
-  "name": "fed_pair_programming_task",
+  "name": "***REMOVED***_***REMOVED***_react_node_car_rental_web_app",
   "version": "1.0.0",
   "description": "",
   "main": "application.js",
@@ -14,7 +14,7 @@
       "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
     }
   },
-  "author": "Phil Timmins + Bernardo Rocha + Nilroy Packiyarajah @ Rentalcars.com",
+  "author": "***REMOVED*** ***REMOVED***",
   "license": "ISC",
   "babel": {
     "presets": [

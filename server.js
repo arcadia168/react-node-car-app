@@ -104,6 +104,9 @@ app.route('/api/cars')
     res.send(responseJson);
   });
 
-app.listen(3000, function () {
+  //configure port variable to run on both azure and locally
+var port = process.env.PORT || 3000;
+
+app.listen(port, function () {
   console.log('Rentalcars.com FED pair programming exercise app listening on port 3000!')
 });
