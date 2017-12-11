@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "watch": "grunt",
-    "start": "nodemon ./server.js",
+    "start": "node ./server.js",
     "webpack": "./node_modules/.bin/webpack -w"
   },
   "jest": {
