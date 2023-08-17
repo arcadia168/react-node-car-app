@@ -1,5 +1,5 @@
 {
-  "name": "***REMOVED***_***REMOVED***_react_node_car_rental_web_app",
+  "name": "erin_eland_react_node_car_rental_web_app",
   "version": "1.0.0",
   "description": "",
   "main": "application.js",
@@ -14,7 +14,7 @@
       "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
     }
   },
-  "author": "***REMOVED*** ***REMOVED***",
+  "author": "Erin Eland",
   "license": "ISC",
   "babel": {
     "presets": [

@@ -10,7 +10,7 @@ ___
 
 ___
 
-See the solution running live hosted on Azure [here](http://***REMOVED***-***REMOVED***-react-node-car-rentals.azurewebsites.net/)
+See the solution running live hosted on Azure [here](http://erin-eland-react-node-car-rentals.azurewebsites.net/)
 
 # Frontend developer code kata/exercise
 
