@@ -22,7 +22,7 @@ Scott González <scott.gonzalez@gmail.com>
 Ariel Flesler <aflesler@gmail.com>
 Jon Evans <jon@springyweb.com>
 TJ Holowaychuk <tj@vision-media.ca>
-Michael ***REMOVED***soussan <mickey@seesmic.com>
+Michael Bensoussan <mickey@seesmic.com>
 Robert Katić <robert.katic@gmail.com>
 Louis-Rémi Babé <lrbabe@gmail.com>
 Earle Castledine <mrspeaker@gmail.com>
@@ -33,7 +33,7 @@ Andrea Giammarchi <andrea.giammarchi@gmail.com>
 Mark Gibson <jollytoad@gmail.com>
 Karl Swedberg <kswedberg@gmail.com>
 Justin Meyer <justinbmeyer@gmail.com>
-***REMOVED*** Alman <cowboy@rj3.net>
+Ben Alman <cowboy@rj3.net>
 James Padolsey <cla@padolsey.net>
 David Petersen <public@petersendidit.com>
 Batiste Bieler <batiste.bieler@gmail.com>
@@ -133,7 +133,7 @@ Vladimir Zhuravlev <private.face@gmail.com>
 Jacob Thornton <jacobthornton@gmail.com>
 Chad Killingsworth <chadkillingsworth@missouristate.edu>
 Nowres Rafid <nowres.rafed@gmail.com>
-David ***REMOVED***jamin <david***REMOVED***@mit.edu>
+David Benjamin <davidben@mit.edu>
 Uri Gilad <antishok@gmail.com>
 Chris Faulkner <thefaulkner@gmail.com>
 Elijah Manor <elijah.manor@gmail.com>
@@ -144,7 +144,7 @@ Mike Pennisi <mike@mikepennisi.com>
 Markus Staab <markus.staab@redaxo.de>
 Dave Riddle <david@joyvuu.com>
 Callum Macrae <callum@lynxphp.com>
-***REMOVED***jamin Truyman <***REMOVED***truyman@gmail.com>
+Benjamin Truyman <bentruyman@gmail.com>
 James Huston <james@jameshuston.net>
 Erick Ruiz de Chávez <erickrdch@gmail.com>
 David Bonner <dbonner@cogolabs.com>
@@ -168,7 +168,7 @@ Yiming He <yiminghe@gmail.com>
 Devin Cooper <cooper.semantics@gmail.com>
 Paul Ramos <paul.b.ramos@gmail.com>
 Rod Vagg <rod@vagg.org>
-***REMOVED***nett Sorbo <bsorbo@gmail.com>
+Bennett Sorbo <bsorbo@gmail.com>
 Sebastian Burkhard <sebi.burkhard@gmail.com>
 Zachary Adam Kaplan <razic@viralkitty.com>
 nanto_vi <nanto@moon.email.ne.jp>
@@ -186,7 +186,7 @@ Nguyen Phuc Lam <ruado1987@gmail.com>
 Dmitry Gusev <dmitry.gusev@gmail.com>
 Michał Gołębiowski <m.goleb@gmail.com>
 Li Xudong <istonelee@gmail.com>
-Steven ***REMOVED***ner <admin@steven***REMOVED***ner.com>
+Steven Benner <admin@stevenbenner.com>
 Tom H Fuertes <tomfuertes@gmail.com>
 Renato Oliveira dos Santos <ros3@cin.ufpe.br>
 ros3cin <ros3@cin.ufpe.br>
@@ -218,7 +218,7 @@ Forbes Lindesay <forbes@lindesay.co.uk>
 S. Andrew Sheppard <andrew@wq.io>
 Leonardo Balter <leonardo.balter@gmail.com>
 Roman Reiß <me@silverwind.io>
-***REMOVED***jy Cui <***REMOVED***jytrys@gmail.com>
+Benjy Cui <benjytrys@gmail.com>
 Rodrigo Rosenfeld Rosas <rr.rosas@gmail.com>
 John Hoven <hovenj@gmail.com>
 Philip Jägenstedt <philip@foolip.org>
@@ -237,7 +237,7 @@ David Corbacho <davidcorbacho@gmail.com>
 Veaceslav Grimalschi <grimalschi@yandex.ru>
 Daniel Husar <dano.husar@gmail.com>
 Frederic Hemberger <mail@frederic-hemberger.de>
-***REMOVED*** Toews <mastahyeti@gmail.com>
+Ben Toews <mastahyeti@gmail.com>
 Aditya Raghavan <araghavan3@gmail.com>
 Victor Homyakov <vkhomyackov@gmail.com>
 Shivaji Varma <contact@shivajivarma.com>

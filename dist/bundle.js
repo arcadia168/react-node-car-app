@@ -6849,7 +6849,7 @@ if (process.env.NODE_ENV !== 'production') {
   // https://html.spec.whatwg.org/multipage/syntax.html#has-an-element-in-scope
   //
   // Note: this does not catch all invalid nesting, nor does it try to (as it's
-  // not clear what practical ***REMOVED***efit doing so provides); instead, we warn only
+  // not clear what practical benefit doing so provides); instead, we warn only
   // for cases where the parser will give a parse tree differing from what React
   // intended. For example, <b><div></div></b> is invalid but we don't warn
   // because it still parses correctly; we do warn for other cases like nested
@@ -10402,7 +10402,7 @@ var ReactMount = {
         !(container.nodeType !== DOC_NODE_TYPE) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'You\'re trying to render a component to the document using server rendering but the checksum was invalid. This usually means you rendered a different component type or props on the client from the one on the server, or your render() methods are impure. React cannot handle this case due to cross-browser quirks by rendering at the document root. You should look for environment dependent code in your components and ensure the props are the same client and server side:\n%s', difference) : _prodInvariant('42', difference) : void 0;
 
         if (process.env.NODE_ENV !== 'production') {
-          process.env.NODE_ENV !== 'production' ? warning(false, 'React attempted to reuse markup in a container but the ' + 'checksum was invalid. This generally means that you are ' + 'using server rendering and the markup generated on the ' + 'server was not what the client was expecting. React injected ' + 'new markup to compensate which works but you have lost many ' + 'of the ***REMOVED***efits of server rendering. Instead, figure out ' + 'why the markup being generated is different on the client ' + 'or server:\n%s', difference) : void 0;
+          process.env.NODE_ENV !== 'production' ? warning(false, 'React attempted to reuse markup in a container but the ' + 'checksum was invalid. This generally means that you are ' + 'using server rendering and the markup generated on the ' + 'server was not what the client was expecting. React injected ' + 'new markup to compensate which works but you have lost many ' + 'of the benefits of server rendering. Instead, figure out ' + 'why the markup being generated is different on the client ' + 'or server:\n%s', difference) : void 0;
         }
       }
     }
@@ -16529,11 +16529,11 @@ ReactDOMComponent.Mixin = {
    * updating the DOM as necessary. This function is probably the single most
    * critical path for performance optimization.
    *
-   * TODO: ***REMOVED***chmark whether checking for changed values in memory actually
+   * TODO: Benchmark whether checking for changed values in memory actually
    *       improves performance (especially statically positioned elements).
-   * TODO: ***REMOVED***chmark the effects of putting this at the top since 99% of props
+   * TODO: Benchmark the effects of putting this at the top since 99% of props
    *       do not change for a given reconciliation.
-   * TODO: ***REMOVED***chmark areas that can be improved with caching.
+   * TODO: Benchmark areas that can be improved with caching.
    *
    * @private
    * @param {object} lastProps

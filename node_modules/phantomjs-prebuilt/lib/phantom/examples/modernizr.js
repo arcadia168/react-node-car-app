@@ -19,7 +19,7 @@
  * which tests to include, go to www.modernizr.com/download/
  *
  * Authors        Faruk Ates, Paul Irish, Alex Sexton
- * Contributors   Ryan Seddon, ***REMOVED*** Alman
+ * Contributors   Ryan Seddon, Ben Alman
  */
 
 window.Modernizr = (function( window, document, undefined ) {
